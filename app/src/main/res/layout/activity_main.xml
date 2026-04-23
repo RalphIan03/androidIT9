@@ -30,17 +30,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PesBook"
-            android:textSize="30dp"
             android:textAlignment="center"
             android:textColor="@color/PesbookBlue"
+            android:textSize="30dp"
             android:textStyle="bold"
 
             />
 
 
-
         <EditText
-            android:id="@+id/editTextText4"
+            android:id="@+id/email"
             style="@style/Widget.AppCompat.AutoCompleteTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,36 +47,37 @@
             android:background="@drawable/input_shape"
             android:ems="10"
             android:inputType="text"
-            android:text="Mobile Number or Email"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
             android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:text="Mobile Number or Email"
 
             />
+
         <EditText
-            android:id="@+id/editTextText5"
+            android:id="@+id/password"
             style="@style/Widget.AppCompat.AutoCompleteTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/input_shape"
             android:ems="10"
-            android:inputType="text"
-            android:text="Mobile Number or Email"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:inputType="textPassword"
             android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            />
+            android:paddingBottom="10dp"
+            android:text="Password" />
+
         <Button
-            android:id="@+id/button22"
+            android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:textSize="25sp"
             android:layout_margin="20dp"
             android:backgroundTint="@color/PesbookBlue"
+            android:text="Login"
+            android:textSize="25sp"
 
             />
 
@@ -106,6 +106,29 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/lines" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/PesbookBlue"
+            android:text="Sign up"
+            android:textSize="25sp"
+
+            />
+
+        <Button
+            android:id="@+id/getqoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/PesbookBlue"
+            android:text="Create Quote"
+            android:textSize="25sp"
+
+            />
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
