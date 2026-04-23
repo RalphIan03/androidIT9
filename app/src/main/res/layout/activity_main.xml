@@ -129,6 +129,17 @@
 
             />
 
+        <Button
+            android:id="@+id/gomap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/PesbookBlue"
+            android:text="Go to Map"
+            android:textSize="25sp"
+
+            />
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

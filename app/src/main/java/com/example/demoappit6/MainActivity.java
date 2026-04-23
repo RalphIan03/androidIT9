@@ -39,7 +39,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button loginbutton, createqoute;
+    private Button loginbutton, createqoute, btnmap;
     private EditText textEmail;
     private EditText textPass;
     private Button signupbtn;
@@ -98,6 +98,15 @@ public class MainActivity extends AppCompatActivity {
         textPass = findViewById(R.id.password);
         loginbutton = (Button) findViewById(R.id.loginButton);
         createqoute = (Button) findViewById(R.id.getqoute);
+        btnmap = (Button) findViewById(R.id.gomap);
+
+        btnmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, googleMaps.class);
+                startActivity(intent);
+            }
+        });
 
         createqoute.setOnClickListener(new View.OnClickListener() {
             @Override
